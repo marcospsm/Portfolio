@@ -1,0 +1,282 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #101010;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+}
+  
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #080808;
+  border-bottom: 1px solid #1DB954;
+}
+ 
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #CCC;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.menu a.active {
+  color: white;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+/* Conteudo Principal */
+.principal-content {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  animation: load 0.3s ease;
+}
+
+.home {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-textbox {
+  display: inline-block; 
+}
+
+.nome {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  color: #39f079;
+  font-family: sans-serif;
+  border-right: 5px solid;
+
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    digitando 1s steps(12),
+    cursor .4s step-end infinite alternate;
+}
+  
+.glitch {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 40px 10px 0 0;
+  pointer-events: auto;
+
+  text-shadow: 
+  0.05em 0 0 rgba(255, 0, 0, .75),
+  -0.025em -0.05em 0 rgba(0, 255, 0, .75),
+  0.025em 0.05em 0 rgba(0, 0, 255, .75);
+
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.05em, -0.025em);
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.05em, 0.025em);
+  opacity: 0.8;
+}
+  
+.home img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  animation: flutuacao 3s ease-in-out infinite;
+}
+  
+/* sobre.html */
+.text-box {
+  background-color: #151515;
+  width: 70%;
+  display: block;
+  overflow: auto;
+  border-left: solid 5px #1DB954;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.text-box h1 {
+  font-size: 30px;
+}
+
+.text-box h1, h2 {
+  margin: 20px 20px;
+  font-weight: lighter;
+  color: white;
+}
+
+.text-box p {
+  color: #C4C4C4;
+  margin: 0px 20px 30px 20px;
+  font-weight: bold;
+}
+
+.text-box div {
+  margin: 30px 20px;
+}
+
+.image-container img {
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  fill: white;
+}
+
+.icon-link {
+  font-family: sans-serif;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  margin-left: 15px;
+}
+
+/* Cards projetos */
+.projetos-container {
+  height: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: load 0.3s ease;
+  border-left: solid 5px #1DB954;
+  background-color: #151515;
+  margin-top: 60px;
+  overflow-y: auto;
+}
+
+.projetos-container ul {
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;}
+
+.projetos-container li:nth-child(4) ~ li {
+  display: none;
+}
+
+.projetos-card {
+  height: 400px;
+  width: 300px;
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  position: relative;
+  font-family: sans-serif;
+  overflow: hidden;
+  position: relative;
+  background-image: url(https://placehold.co/300x400);
+}
+
+.projetos-card .panel {
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projetos-card:hover .panel {
+  height: 100%;
+}
+
+/* Contatos.html */
+.botao {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: solid 2px #1DB954;
+  margin: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #101010;
+  user-select: none;
+}
+
+.botao:hover {
+  background-color: #303030;
+}
+
+.text-box .botao {
+  height: 80px;
+  width: 350px;
+  margin: 30px auto;
+  font-size: 22px;
+}
+
+.botao img {
+  height: 28px;
+  margin-right: 10px;
+}
+

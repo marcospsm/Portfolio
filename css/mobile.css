@@ -1,0 +1,237 @@
+/* index.html */
+
+/* dispositivos com largura menor ou igual a 600px */
+@media (max-width: 600px) {
+    .header {
+        height: 10%;
+    }
+  
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .principal-content {
+        height: 90%;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-textbox {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .glitch-container {
+        margin-top: 20px;
+    }
+
+    .glitch {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .home img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .icon-link {
+        position: static;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* dispositivos com largura entre 601px e 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .home {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .home-left {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .home-textbox {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .glitch-container {
+        margin-top: 20px;
+    }
+
+    .glitch {
+        font-size: 2.5rem;
+        margin: 20px 5px;
+    }
+
+    .home img {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .icon-link {
+        position: static;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+
+/* sobre.html */
+
+/* dispositivos com largura menor ou igual a 600px */
+@media (max-width: 600px) {
+    .text-box h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-box h2 {
+        font-size: 1.4rem;
+    }
+
+    .text-box p {
+        font-size: 1.2rem;
+    }
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container img {
+        margin: 10px;
+    }
+}
+
+/* Estilos para dispositivos com largura entre 601px e 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .text-box h1 {
+        font-size: 2rem;
+    }
+
+    .text-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .text-box p {
+        font-size: 1.4rem;
+    }
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container img {
+        margin: 10px;
+    }
+}
+
+/* projetos.html */
+
+/* Estilos para dispositivos com largura menor ou igual a 600px */
+@media (max-width: 600px) {
+    .projetos-card {
+        margin-bottom: 20px;
+    }
+  
+    .projetos-card h1 {
+        font-size: 1.4rem;
+    }
+    .projetos-container ul {
+        justify-content: center;
+    }
+  
+    .projetos-card p {
+        font-size: 1.2rem;
+    }
+  
+    .botao p {
+        font-size: 1rem;
+    }
+  
+    .load-more {
+        display: flex;
+        justify-content: center;
+    }
+  
+    .load-more .botao {
+        width: 200px;
+    }
+}
+  
+  /* Estilos para dispositivos com largura entre 601px e 1024px */
+@media (min-width: 601px) and (max-width: 1024px) { 
+    .projetos-card {
+        margin: 10px;
+    }
+
+    .projetos-container ul {
+        justify-content: center;
+    }
+  
+    .projetos-card h1 {
+        font-size: 1.6rem;
+    }
+  
+    .projetos-card p {
+        font-size: 1.4rem;
+    }
+  
+    .botao p {
+        font-size: 1.2rem;
+    }
+  
+    .load-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    .load-more .botao {
+        width: 200px;
+    }
+}
+  
+/* contato.html */
+/* Estilos para dispositivos com largura menor ou igual a 600px */
+@media (max-width: 767px) {
+    .text-box {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-box .botao {
+        height: 80px;
+        width: 300px;
+      }
+  }
+  
